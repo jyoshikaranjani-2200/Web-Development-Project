@@ -1,0 +1,375 @@
+
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f8fcff;
+    color: #333;
+}
+
+/* Navigation Bar */
+header {
+    background: #073b4c;
+    padding: 20px 6%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar h2 {
+    color: white;
+    font-size: 25px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 18px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+
+.navbar ul li a:hover {
+    color: #06d6a0;
+}
+
+/* Hero Section */
+.hero {
+    height: 480px;
+
+    background:
+    linear-gradient(rgba(0,0,0,0.45),
+    rgba(0,0,0,0.45)),
+    url("https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=1600")
+    center/cover no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    font-size: 19px;
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    background: #06a77d;
+    color: white;
+    padding: 13px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Common Section */
+.about,
+.departments,
+.doctors,
+.services,
+.appointment,
+.health,
+.emergency,
+.contact {
+    padding: 55px 8%;
+    text-align: center;
+}
+
+.about h1,
+.departments h1,
+.doctors h1,
+.services h1,
+.appointment h1,
+.health h1,
+.emergency h1,
+.contact h1 {
+    color: #087e8b;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+/* About Section */
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    text-align: left;
+}
+
+.about-container img {
+    width: 45%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h2 {
+    margin-bottom: 15px;
+    color: #073b4c;
+}
+
+.about-text p {
+    line-height: 1.8;
+    margin-bottom: 12px;
+}
+
+/* Departments */
+.departments {
+    background: #eaf7f9;
+}
+
+.department-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.department-card {
+    background: white;
+    width: 230px;
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.department-card:hover {
+    transform: translateY(-7px);
+}
+
+.department-card h2 {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.department-card h3 {
+    color: #087e8b;
+    margin-bottom: 12px;
+}
+
+/* Doctors */
+.doctor-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.doctor-card {
+    width: 260px;
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.12);
+    transition: 0.3s;
+}
+
+.doctor-card:hover {
+    transform: translateY(-7px);
+}
+
+.doctor-card img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.doctor-card h3 {
+    color: #087e8b;
+    margin: 15px 0 10px;
+}
+
+.doctor-card p {
+    margin: 8px 0;
+}
+
+/* Services */
+.services {
+    background: #eaf7f9;
+}
+
+.service-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.service-card {
+    width: 240px;
+    padding: 25px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.service-card h3 {
+    color: #087e8b;
+    margin-bottom: 12px;
+}
+
+/* Appointment Form */
+.appointment form {
+    max-width: 550px;
+    margin: 30px auto 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.appointment input,
+.appointment select,
+.appointment textarea {
+    padding: 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    width: 100%;
+}
+
+.appointment textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.appointment button {
+    padding: 14px;
+    background: #087e8b;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.appointment button:hover {
+    background: #073b4c;
+}
+
+/* Health Tips */
+.health {
+    background: #eaf7f9;
+}
+
+.health-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.health-card {
+    background: white;
+    width: 250px;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.health-card h3 {
+    color: #087e8b;
+    margin-bottom: 12px;
+}
+
+/* Emergency Section */
+.emergency {
+    background: #ffe5e5;
+}
+
+.emergency h1 {
+    color: #d62828;
+}
+
+.emergency h2 {
+    color: #d62828;
+    margin: 20px 0;
+}
+
+.emergency h3 {
+    color: #333;
+}
+
+/* Contact Section */
+.contact p {
+    margin: 15px 0;
+    font-size: 16px;
+}
+
+/* Footer */
+footer {
+    background: #073b4c;
+    color: white;
+    text-align: center;
+    padding: 22px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .navbar ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero-content h1 {
+        font-size: 30px;
+    }
+
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-container img {
+        width: 100%;
+    }
+
+    .department-container,
+    .doctor-container,
+    .service-container,
+    .health-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .department-card,
+    .doctor-card,
+    .service-card,
+    .health-card {
+        width: 100%;
+        max-width: 350px;
+    }
+}
